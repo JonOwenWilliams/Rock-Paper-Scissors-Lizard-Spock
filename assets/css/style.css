@@ -13,7 +13,7 @@ colors i want to use
 body {
     font-family: "Kode Mono", 'Chakra Petch', sans-serif;
     text-align: center;
-    background-color: lightgray;
+    background-color: white;
     margin: 0;
 }
 
@@ -26,6 +26,8 @@ body {
     font-size: 75px;
     padding-bottom: 25px;
 }
+
+/** play area **/
 
 /**  Playable Button Styles **/
 
@@ -48,3 +50,5 @@ body {
 #spockbutton{
 
 }
+
+/** good luck button **/
