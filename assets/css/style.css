@@ -41,6 +41,13 @@ body {
     padding: 1%;
 }
 
+/** timer **/
+
+#timer {
+    font-size: 50px;
+    font-weight: bold;
+}
+
 /**  Playable Button Styles **/
 .pbutton {
     padding-top: 15px;
@@ -58,6 +65,7 @@ body {
 }
 
 #rockbutton:hover {
+    border: 10px;
     transition: 2s;
 }
 
