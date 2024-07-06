@@ -33,22 +33,3 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(changeIcons, 1500);
 });
 
-// countdown timer
-
-let countdownTimer = 10;
-let timerElement = document.getElementById('timer');
-let timer;
-
-function countdown() {
-    countdownTimer = 10;
-    timerElement.innerText = countdownTimer;
-
-    timer = setInterval(() => {
-        countdownTimer--;
-        timerElement.innerText = countdownTimer;
-        if (countdownTimer === 0) {
-            timerElement.innerText = 'Pick Now!';
-            clearInterval(timer);
-        }
-    }, 1000);
-}
