@@ -39,6 +39,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 /**  Playable Button Styles **/
@@ -50,17 +55,22 @@ body {
     width: 100px;
     height: 100px;
     font-size: 3rem;
-    margin: 0 15px;
+    margin: 0 15px 5px;
+    flex: 1 1 calc(20% - 30px);
+    max-width: 150px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 80px;
 }
 
 #rockbutton {
     color: #f40234;
-}
-
-#rockbutton:hover {
-    font-weight: 400;
-    border: 10px #f40234;
-    transition: 2s;
 }
 
 #paperbutton {
@@ -80,3 +90,14 @@ body {
 }
 
 /** good luck button **/
+
+
+/** media query **/
+@media screen (max-width;600px) {
+    /** change button size depending on screen size **/
+    .pbutton {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+}
