@@ -65,7 +65,8 @@ body {
 }
 
 #rockbutton:hover {
-    border: 10px;
+    font-weight: 400;
+    border: 10px #f40234;
     transition: 2s;
 }
 
