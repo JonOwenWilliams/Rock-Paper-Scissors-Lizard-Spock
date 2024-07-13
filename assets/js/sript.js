@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //  playable Choices
 
-    const result = document.getElementById('result');
+    const resultElement = document.getElementById('result');
     const playersChoice = document.getElementById('displayPlayerChoice');
     const randomChoice = document.getElementById('displayRandomChoice');
     const wins = document.getElementById('wins')
@@ -68,20 +68,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function play(userChoice) {
         const computerChoice = randomizedChoice();
-        const choicesMade = getResults(userChoice, computerChoice);
+        const result = getResults(userChoice, computerChoice);
 
         playersChoice.innerHTML = `<p>You chose: ${gameIcons[userChoice]}</p>`;
         randomChoice.innerHTML = `<p>Computer chose: ${gameIcons[computerChoice]}</p>`;
 
-        if (choicesMade === 'win') {
+        if (result === 'win') {
             playersScore++;
-            result.innerText = 'You Win!';
-        } else if (choicesMade === 'lose') {
+            resultElement.innerText = 'You Win!';
+        } else if (result === 'lose') {
             randomizerScore++;
-            result.innerText = 'You Lose! Good luck next time!';
+            resultEement.innerText = 'You Lose! Good luck next time!';
         } else {
             draw++;
-            result.innerText = "It's a Draw!";
+            resultElement.innerText = "It's a Draw!";
         }
         updateScore();
     }
