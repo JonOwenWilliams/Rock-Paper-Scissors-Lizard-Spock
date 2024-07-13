@@ -43,3 +43,8 @@ const gameIcons = {
     lizard:'<i class="fa-regular fa-hand-lizard"></i>',
     spock:'<i class="fa-regular fa-hand-spock"></i>'
 };
+
+const result = document.getElementById('result');
+const score = document.getElementsByClassName ('scores');
+const playersChoice = document.getElementById ('displayPlayerChoice')
+const randomChoice = document.getElementById ('displayRandomChoice')
