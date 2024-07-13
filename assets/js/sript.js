@@ -33,28 +33,29 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(changeIcons, 1500);
 
 
-// score area
+    // score area
 
-let randomizerScore = 0
-let playersScore = 0
-let draw = 0
+    let randomizerScore = 0
+    let playersScore = 0
+    let draw = 0
 
-//  playable Choices
+    //  playable Choices
 
-const gameChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-const gameIcons = {
-    rock: '<i class="fa-regular fa-hand-rock"></i>',
-    paper: '<i class="fa-regular fa-hand"></i>',
-    scissors: '<i class="fa-regular fa-hand-scissors"></i>',
-    lizard: '<i class="fa-regular fa-hand-lizard"></i>',
-    spock: '<i class="fa-regular fa-hand-spock"></i>'
-};
     const result = document.getElementById('result');
     const playersChoice = document.getElementById('displayPlayerChoice');
     const randomChoice = document.getElementById('displayRandomChoice');
     const wins = document.getElementById('wins')
     const losses = document.getElementById('losses')
     const draws = document.getElementById('draws')
+
+    const gameChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    const gameIcons = {
+        rock: 'Rock',
+        paper: 'Paper',
+        scissors: 'Scissors',
+        lizard: 'Lizard',
+        spock: 'Spock'
+    };
 
     // randomizer to act as computers choice
 
@@ -69,20 +70,20 @@ const gameIcons = {
         const computerChoice = randomizedChoice();
         const choicesMade = getResults(userChoice, computerChoice);
 
-        playersChoice.innerHTML = `You chose: ${gameIcons[userChoice]}`;
-        randomChoice.innerHTML = `Computer chose: ${gameIcons[computerChoice]}`;
+        playersChoice.innerHTML = `<p>You chose: ${gameIcons[userChoice]}</p>`;
+        randomChoice.innerHTML = `<p>Computer chose: ${gameIcons[computerChoice]}</p>`;
 
         if (choicesMade === 'win') {
             playersScore++;
             result.innerText = 'You Win!';
         } else if (choicesMade === 'lose') {
             randomizerScore++;
-            result.innerText = 'You Lose! Goodluck next time!';
+            result.innerText = 'You Lose! Good luck next time!';
         } else {
             draw++;
             result.innerText = "It's a Draw!";
         }
-        updateScore()
+        updateScore();
     }
 
     //updating the score display

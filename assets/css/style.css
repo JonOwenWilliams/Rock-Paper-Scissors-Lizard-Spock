@@ -58,6 +58,9 @@ body {
     margin: 0 15px 5px;
     flex: 1 1 calc(20% - 30px);
     max-width: 150px;
+}
+
+.pbutton:hover {
     cursor: pointer;
 }
 
