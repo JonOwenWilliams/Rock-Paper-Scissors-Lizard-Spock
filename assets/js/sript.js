@@ -70,18 +70,18 @@ function play(userChoice) {
     const computerChoice = randomizedChoice();
     const choicesMade = getResults (userChoice, computerChoice);
 
-    playersChoice.innerText = 'You chose = ${gameIcons[gameChoices]}';
-    randomChoice.innerText = 'Computer chose = ${gameIcons[gameChoices]}';
+    playersChoice.innerText = `You chose = ${gameIcons[gameChoices]}`;
+    randomChoice.innerText = `Computer chose = ${gameIcons[gameChoices]}`;
 
     if (choicesMade === 'win') {
         playersScore++;
-        result = 'You Win!';
+        result.innerText = 'You Win!';
     } else if (choicesMade === 'lose') {
         randomizerScore++;
-        result = 'You Lose! Goodluck next time!'
+        result.innerText = 'You Lose! Goodluck next time!';
     } else {
-        draw++
-        result = "It's a Draw!"
+        draw++;
+        result.innerText = "It's a Draw!";
     }
     updateScore()
 }
