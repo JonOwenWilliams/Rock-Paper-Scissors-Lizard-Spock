@@ -58,12 +58,24 @@ function randomizedChoice() {
 
 // playable buttons 
 
+function play(userChoice) {
+    const computerChoice = randomizedChoice();
+}
+
 function getResults(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return 'draw';
     }
-}
-
-function play(userChoice) {
-    const computerChoice = randomizedChoice();
+    switch (userChoice) {
+        case 'rock':
+            return (computerChoice === 'scissors' || computerChoice === 'lizard') ? 'win' : 'lose';
+        case 'paper':
+               return (computerChoice === 'rock' || computerChoice === 'spock') ? 'win' : 'lose';
+        case 'scissors':
+            return (computerChoice === 'paper' || computerChoice === 'lizard') ? 'win' : 'lose';
+        case 'lizard':
+            return (computerChoice === 'spock' || computerChoice === 'paper') ? 'win' : 'lose';
+        case 'spock':
+            return (computerChoice === 'scissors' || computerChoice === 'rock') ? 'win' : 'lose';
+    }
 }
