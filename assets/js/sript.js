@@ -70,8 +70,8 @@ function play(userChoice) {
     const computerChoice = randomizedChoice();
     const choicesMade = getResults (userChoice, computerChoice);
 
-    playersChoice.innerText = `You chose = ${gameIcons[gameChoices]}`;
-    randomChoice.innerText = `Computer chose = ${gameIcons[gameChoices]}`;
+    playersChoice.innerHTML = `You chose = ${gameIcons[gameChoices]}`;
+    randomChoice.innerHTML = `Computer chose = ${gameIcons[gameChoices]}`;
 
     if (choicesMade === 'win') {
         playersScore++;
