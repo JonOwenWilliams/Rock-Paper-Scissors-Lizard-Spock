@@ -49,7 +49,21 @@ const score = document.getElementsByClassName ('scores');
 const playersChoice = document.getElementById ('displayPlayerChoice');
 const randomChoice = document.getElementById ('displayRandomChoice');
 
+// randomizer to act as computers choice
+
 function randomizedChoice() {
     const randomizer = Math.floor(Math.random() * gameChoices.length);
     return gameChoices[randomizer];
+}
+
+// playable buttons 
+
+function getResults(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return 'draw';
+    }
+}
+
+function play(userChoice) {
+    const computerChoice = randomizedChoice();
 }
