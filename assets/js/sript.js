@@ -33,6 +33,12 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(changeIcons, 1500);
 });
 
+// score area
+
+let randomizerScore = 0
+let playersScore = 0
+let draw = 0
+
 //  playable Choices
 
 const gameChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
@@ -62,7 +68,12 @@ function play(userChoice) {
     const computerChoice = randomizedChoice();
     const choicesMade = getResults (userChoice, computerChoice);
 
-    playersChoice.innerText
+    playersChoice.innerText = 'You chose = ${gameIcons[gameChoices]}';
+    randomChoice.innerText = 'Computer chose = ${gameIcons[gameChoices]}';
+
+    if (choicesMade === 'win') {
+        
+    }
 }
 
 // what wins and what looses
