@@ -60,7 +60,12 @@ function randomizedChoice() {
 
 function play(userChoice) {
     const computerChoice = randomizedChoice();
+    const choicesMade = getResults (userChoice, computerChoice);
+
+    playersChoice.innerText
 }
+
+// what wins and what looses
 
 function getResults(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
