@@ -58,6 +58,7 @@ body {
     margin: 0 15px 5px;
     flex: 1 1 calc(20% - 30px);
     max-width: 150px;
+    cursor: pointer;
 }
 
 .choice {
@@ -93,7 +94,7 @@ body {
 
 
 /** media query **/
-@media screen (max-width;600px) {
+@media screen (max-width: 430px) {
     /** change button size depending on screen size **/
     .pbutton {
         width: 80px;
