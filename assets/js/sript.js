@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
+document.addEventListener("DOMContentLoaded", function () {
+
     // changing icon under header
 
     // different icons
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
     // colors for the changing icon
     const iconColors = [
-        '#f40234', 
+        '#f40234',
         '#f0882f',
         '#ffe600',
         '#63a000',
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     setInterval(changeIcons, 1500);
-});
+
 
 // score area
 
@@ -43,73 +43,76 @@ let draw = 0
 
 const gameChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 const gameIcons = {
-    rock:'<i class="fa-regular fa-hand-rock"></i>',
-    paper:'<i class="fa-regular fa-hand"></i>',
-    scissors:'<i class="fa-regular fa-hand-scissors"></i>',
-    lizard:'<i class="fa-regular fa-hand-lizard"></i>',
-    spock:'<i class="fa-regular fa-hand-spock"></i>'
+    rock: '<i class="fa-regular fa-hand-rock"></i>',
+    paper: '<i class="fa-regular fa-hand"></i>',
+    scissors: '<i class="fa-regular fa-hand-scissors"></i>',
+    lizard: '<i class="fa-regular fa-hand-lizard"></i>',
+    spock: '<i class="fa-regular fa-hand-spock"></i>'
 };
+    const result = document.getElementById('result');
+    const playersChoice = document.getElementById('displayPlayerChoice');
+    const randomChoice = document.getElementById('displayRandomChoice');
+    const wins = document.getElementById('wins')
+    const losses = document.getElementById('losses')
+    const draws = document.getElementById('draws')
 
-const result = document.getElementById('result');
-const playersChoice = document.getElementById ('displayPlayerChoice');
-const randomChoice = document.getElementById ('displayRandomChoice');
-const wins = document.getElementById ('wins')
-const losses = document.getElementById ('losses')
-const draws = document.getElementById ('draws')
+    // randomizer to act as computers choice
 
-// randomizer to act as computers choice
-
-function randomizedChoice() {
-    const randomizer = Math.floor(Math.random() * gameChoices.length);
-    return gameChoices[randomizer];
-}
-
-// playable buttons 
-
-function play(userChoice) {
-    const computerChoice = randomizedChoice();
-    const choicesMade = getResults (userChoice, computerChoice);
-
-    playersChoice.innerHTML = `You chose = ${gameIcons[gameChoices]}`;
-    randomChoice.innerHTML = `Computer chose = ${gameIcons[gameChoices]}`;
-
-    if (choicesMade === 'win') {
-        playersScore++;
-        result.innerText = 'You Win!';
-    } else if (choicesMade === 'lose') {
-        randomizerScore++;
-        result.innerText = 'You Lose! Goodluck next time!';
-    } else {
-        draw++;
-        result.innerText = "It's a Draw!";
+    function randomizedChoice() {
+        const randomizer = Math.floor(Math.random() * gameChoices.length);
+        return gameChoices[randomizer];
     }
-    updateScore()
-}
 
-//updating the score display
+    // playable buttons 
 
-function updateScore() {
-    wins.innerText = playersScore;
-    losses.innerText = randomizerScore;
-    draws.innerText = draw;
-}
+    function play(userChoice) {
+        const computerChoice = randomizedChoice();
+        const choicesMade = getResults(userChoice, computerChoice);
 
-// what wins and what looses
+        playersChoice.innerHTML = `You chose: ${gameIcons[userChoice]}`;
+        randomChoice.innerHTML = `Computer chose: ${gameIcons[computerChoice]}`;
 
-function getResults(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-        return 'draw';
+        if (choicesMade === 'win') {
+            playersScore++;
+            result.innerText = 'You Win!';
+        } else if (choicesMade === 'lose') {
+            randomizerScore++;
+            result.innerText = 'You Lose! Goodluck next time!';
+        } else {
+            draw++;
+            result.innerText = "It's a Draw!";
+        }
+        updateScore()
     }
-    switch (userChoice) {
-        case 'rock':
-            return (computerChoice === 'scissors' || computerChoice === 'lizard') ? 'win' : 'lose';
-        case 'paper':
-               return (computerChoice === 'rock' || computerChoice === 'spock') ? 'win' : 'lose';
-        case 'scissors':
-            return (computerChoice === 'paper' || computerChoice === 'lizard') ? 'win' : 'lose';
-        case 'lizard':
-            return (computerChoice === 'spock' || computerChoice === 'paper') ? 'win' : 'lose';
-        case 'spock':
-            return (computerChoice === 'scissors' || computerChoice === 'rock') ? 'win' : 'lose';
+
+    //updating the score display
+
+    function updateScore() {
+        wins.innerText = playersScore;
+        losses.innerText = randomizerScore;
+        draws.innerText = draw;
     }
-}
+
+    // what wins and what looses
+
+    function getResults(userChoice, computerChoice) {
+        if (userChoice === computerChoice) {
+            return 'draw';
+        }
+        switch (userChoice) {
+            case 'rock':
+                return (computerChoice === 'scissors' || computerChoice === 'lizard') ? 'win' : 'lose';
+            case 'paper':
+                return (computerChoice === 'rock' || computerChoice === 'spock') ? 'win' : 'lose';
+            case 'scissors':
+                return (computerChoice === 'paper' || computerChoice === 'lizard') ? 'win' : 'lose';
+            case 'lizard':
+                return (computerChoice === 'spock' || computerChoice === 'paper') ? 'win' : 'lose';
+            case 'spock':
+                return (computerChoice === 'scissors' || computerChoice === 'rock') ? 'win' : 'lose';
+        }
+    }
+
+    window.play = play;
+
+});
