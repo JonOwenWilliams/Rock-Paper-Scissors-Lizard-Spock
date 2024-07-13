@@ -46,5 +46,10 @@ const gameIcons = {
 
 const result = document.getElementById('result');
 const score = document.getElementsByClassName ('scores');
-const playersChoice = document.getElementById ('displayPlayerChoice')
-const randomChoice = document.getElementById ('displayRandomChoice')
+const playersChoice = document.getElementById ('displayPlayerChoice');
+const randomChoice = document.getElementById ('displayRandomChoice');
+
+function randomizedChoice() {
+    const randomizer = Math.floor(Math.random() * gameChoices.length);
+    return gameChoices[randomizer];
+}
