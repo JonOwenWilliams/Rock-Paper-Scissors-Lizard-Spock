@@ -51,9 +51,11 @@ const gameIcons = {
 };
 
 const result = document.getElementById('result');
-const score = document.getElementsByClassName ('scores');
 const playersChoice = document.getElementById ('displayPlayerChoice');
 const randomChoice = document.getElementById ('displayRandomChoice');
+const wins = document.getElementById ('wins')
+const losses = document.getElementById ('losses')
+const draws = document.getElementById ('draws')
 
 // randomizer to act as computers choice
 
@@ -72,8 +74,24 @@ function play(userChoice) {
     randomChoice.innerText = 'Computer chose = ${gameIcons[gameChoices]}';
 
     if (choicesMade === 'win') {
-        
+        playersScore++;
+        result = 'You Win!';
+    } else if (choicesMade === 'lose') {
+        randomizerScore++;
+        result = 'You Lose! Goodluck next time!'
+    } else {
+        draw++
+        result = "It's a Draw!"
     }
+    updateScore()
+}
+
+//updating the score display
+
+function updateScore() {
+    wins.innerText = playersScore;
+    losses.innerText = randomizerScore;
+    draws.innerText = draw;
 }
 
 // what wins and what looses
