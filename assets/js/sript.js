@@ -35,4 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //  playable Choices
 
-const 
+const gameChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+const gameIcons = {
+    rock:'<i class="fa-regular fa-hand-rock"></i>',
+    paper:'<i class="fa-regular fa-hand"></i>',
+    scissors:'<i class="fa-regular fa-hand-scissors"></i>',
+    lizard:'<i class="fa-regular fa-hand-lizard"></i>',
+    spock:'<i class="fa-regular fa-hand-spock"></i>'
+};
