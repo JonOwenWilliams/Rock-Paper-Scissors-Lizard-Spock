@@ -33,3 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(changeIcons, 1500);
 });
 
+//  playable Choices
+
+const 
