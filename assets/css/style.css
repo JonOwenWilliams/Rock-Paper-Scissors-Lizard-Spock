@@ -93,7 +93,12 @@ body {
     color: #0059a1;
 }
 
-/** good luck button **/
+/** rules **/
+
+#rulesoverlay {
+    display: none;
+    position: fixed;
+}
 
 
 /** media query **/
