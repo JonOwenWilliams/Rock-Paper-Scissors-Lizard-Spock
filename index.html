@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +9,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
+
 <body>
     <!-- Header -->
-    <header><h1>Rock, Paper, Scissors, Lizard, Spock</h1></header>
+    <header>
+        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+    </header>
     <div class="icon"><i id="changing-icon" class="fa-regular fa-hand-rock"></i></div>
     <div id="playarea">
         <!-- Playable buttons -->
         <div id="playablebuttons">
             <!-- Rock -->
             <div class="choice" id="rock">
-            <button id="rockbutton" class="pbutton" onclick="play('rock')"><i class="fa-regular fa-hand-rock"></i></button>
-            <h3>Rock</h3>
+                <button id="rockbutton" class="pbutton" onclick="play('rock')"><i
+                        class="fa-regular fa-hand-rock"></i></button>
+                <h3>Rock</h3>
             </div>
             <!-- Paper -->
             <div class="choice" id="paper">
-            <button id="paperbutton" class="pbutton" onclick="play('paper')"><i class="fa-regular fa-hand"></i></button>
-            <h3>Paper</h3>
+                <button id="paperbutton" class="pbutton" onclick="play('paper')"><i
+                        class="fa-regular fa-hand"></i></button>
+                <h3>Paper</h3>
             </div>
             <!-- Scissors -->
             <div class="choice" id="scissors">
-            <button id="scissorsbutton" class="pbutton" onclick="play('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
-            <h3>Scissors</h3>
+                <button id="scissorsbutton" class="pbutton" onclick="play('scissors')"><i
+                        class="fa-regular fa-hand-scissors"></i></button>
+                <h3>Scissors</h3>
             </div>
             <!-- Lizard -->
-             <div class="choice" id="lizard">
-            <button id="lizardbutton" class="pbutton" onclick="play('lizard')"><i class="fa-regular fa-hand-lizard"></i></button>
-            <h3>Lizard</h3>    
+            <div class="choice" id="lizard">
+                <button id="lizardbutton" class="pbutton" onclick="play('lizard')"><i
+                        class="fa-regular fa-hand-lizard"></i></button>
+                <h3>Lizard</h3>
             </div>
             <!-- Spock -->
-             <div class="choice" id="spock">
-            <button id="spockbutton" class="pbutton" onclick="play('spock')"><i class="fa-regular fa-hand-spock"></i></button>
-            <h3>Spock</h3>    
+            <div class="choice" id="spock">
+                <button id="spockbutton" class="pbutton" onclick="play('spock')"><i
+                        class="fa-regular fa-hand-spock"></i></button>
+                <h3>Spock</h3>
             </div>
         </div>
         <!-- display choices -->
-         <div id="displayPlayerChoice"></div>
-         <div id="displayRandomChoice"></div>
+        <div id="displayPlayerChoice"></div>
+        <div id="displayRandomChoice"></div>
         <!-- Score box -->
-         <div id="result"></div>
-         <div id="scorebox">
+        <div id="result"></div>
+        <div id="scorebox">
             <p class="scores">Wins <span id="wins">0</span></p>
             <p class="scores">losses <span id="losses">0</span></p>
             <p class="scores">draws <span id="draws">0</span></p>
-         </div>
+        </div>
+        <button>show rules</button>
+
+    </div>
+    <div>
+        <h2>Rock Paper Scissors Lizard Spock Rules</h2>
+        <p>Rock crushes Scissors</p>
+        <p>Scissors cuts Paper</p>
+        <p>Paper covers Rock</p>
+        <p>Rock crushes Lizard</p>
+        <p>Lizard poisons Spock</p>
+        <p>Spock smashes Scissors</p>
+        <p>Scissors decapitates Lizard</p>
+        <p>Lizard eats Paper</p>
+        <p>Paper disproves Spock</p>
+        <p>Spock vaporizes Rock</p>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
