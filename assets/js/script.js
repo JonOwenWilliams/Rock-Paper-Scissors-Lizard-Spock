@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             resultElement.innerText = 'You Win!';
         } else if (result === 'lose') {
             randomizerScore++;
-            resultEement.innerText = 'You Lose! Good luck next time!';
+            resultElement.innerText = 'You Lose! Good luck next time!';
         } else {
             draw++;
             resultElement.innerText = "It's a Draw!";
