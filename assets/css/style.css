@@ -13,8 +13,10 @@ colors i want to use
 body {
     font-family: "Kode Mono", 'Chakra Petch', sans-serif;
     text-align: center;
-    background-color: rgb(158, 158, 158);
+    background-image: linear-gradient(135deg, #f40234, #f0882f, #ffe600, #63a000, #0059a1);
     margin: 0;
+    height: 100vh;
+    position: ;
 }
 
 /** Icon **/
@@ -25,6 +27,7 @@ body {
     justify-content: center;
     font-size: 75px;
     padding-bottom: 25px;
+    text-shadow: 0 0 10px #000000;
 }
 
 /** play area **/
@@ -108,7 +111,7 @@ body {
 
 
 /** media query **/
-@media screen (max-width: 430px) {
+@media screen (max-width: 430px); {
     /** change button size depending on screen size **/
     .pbutton {
         width: 80px;
