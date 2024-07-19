@@ -15,7 +15,7 @@ body {
     text-align: center;
     background-image: linear-gradient(135deg, #f40234, #f0882f, #ffe600, #63a000, #0059a1);
     margin: 0;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
@@ -50,6 +50,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 /**  Playable Button Styles **/
@@ -97,8 +98,6 @@ body {
 #spockbutton {
     color: #2794ec;
 }
-
-/** rules **/
 
 /** main style for the rules section **/
 #rulesoverlay {
@@ -187,7 +186,7 @@ body {
         flex-direction: column;
         gap: 10px;
         padding: 10px;
-        height: 500px;
+        height: auto;
     }
 
     .button-container {
