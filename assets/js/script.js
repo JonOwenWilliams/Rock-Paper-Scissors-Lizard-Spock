@@ -116,4 +116,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.play = play;
 
+    // rules section
+
+    //show rules
+
+    document.getElementById('showrules').addEventListener('click',function() {
+        document.getElementById('rulesoverlay').classList.add('show')
+    });
+
+    document.getElementById('hiderules').addEventListener('click', function() {
+        document.getElementById('rulesoverlay').classList.remove('show')
+    });
 });
