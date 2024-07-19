@@ -16,7 +16,8 @@ body {
     background-image: linear-gradient(135deg, #f40234, #f0882f, #ffe600, #63a000, #0059a1);
     margin: 0;
     height: 100vh;
-    position: ;
+    background-size: 100% 100%;
+    overflow: auto;
 }
 
 /** Icon **/
@@ -94,7 +95,7 @@ body {
 }
 
 #spockbutton{
-    color: #0059a1;
+    color: #2794ec;
 }
 
 /** rules **/
@@ -114,8 +115,8 @@ body {
 @media screen (max-width: 430px); {
     /** change button size depending on screen size **/
     .pbutton {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         font-size: 2.5rem;
     }
 }

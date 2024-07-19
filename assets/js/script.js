@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         '#f0882f',
         '#ffe600',
         '#63a000',
-        '#0059a1'
+        '#2794ec'
     ]
 
     let currentIndex = 0;
