@@ -35,7 +35,7 @@ body {
 /** play area **/
 
 #playarea {
-    background-color: #d6d6d6;
+    background-color: #ffffff;
     box-sizing: border-box;
     height: 100vh;
     width: 85%;
@@ -142,7 +142,7 @@ body {
 }
 /** media query **/
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 769px) {
     .pbutton {
         width: 60px;
         height: 60px;
