@@ -147,6 +147,92 @@ body {
 
 /** media query **/
 
+/** screen style for screens larger than a tablet **/
+@media screen and (min-width: 770px) {
+    
+    #playarea {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-container {
+        position: relative;
+        width: 400px;
+        height: 400px;
+    }
+
+    .pbutton {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+
+    #rockbutton {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #paperbutton {
+        top: 25px;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+
+    #scissorsbutton {
+        top: 75%;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+
+    #lizardbutton {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #spockbutton {
+        top: 75%;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .center-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #displayPlayerChoice,
+    #displayRandomChoice,
+    #result {
+        margin-top: 10px, 0;
+    }
+
+    #scorebox {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;  
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rules {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 /** screen style for tablets **/
 @media screen and (min-width: 431px) and (max-width: 769px) {
     .pbutton {
@@ -207,5 +293,5 @@ body {
     .rules {
         margin-top: auto;
     }
-   
+
 }
