@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -149,18 +149,17 @@ body {
 
 /** screen style for screens larger than a tablet **/
 @media screen and (min-width: 770px) {
-    
+
+    /** playarea **/
     #playarea {
-        display:flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .button-container {
         position: relative;
         width: 400px;
         height: 400px;
+        margin-bottom: 100px;
     }
 
     .pbutton {
@@ -170,42 +169,82 @@ body {
         font-size: 3rem;
     }
 
+    /** rock **/
     #rockbutton {
-        top: 0;
+        position: absolute;
+        top: 45%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -200%);
     }
 
+    .rock-title {
+        position: absolute;
+        top: 3%;
+        left: 49%;
+    }
+
+    /** paper **/
     #paperbutton {
-        top: 25px;
-        right: 0;
-        transform: translate(50%, -50%);
+        position: absolute;
+        top: 45%;
+        left: 110%;
+        transform: translate(-50%, -50%);
     }
 
+    .paper-title {
+        position: absolute;
+        top: 49%;
+        right: -20%;
+    }
+
+    /** scissors **/
     #scissorsbutton {
-        top: 75%;
-        right: 0;
-        transform: translate(50%, -50%);
+        position: absolute;
+        top: 110%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .scissors-title {
+        position: absolute;
+        top: 114%;
+        left: 68%;
     }
 
+    /** lizard **/
     #lizardbutton {
-        top: 100%;
-        left: 50%;
+        position: absolute;
+        top: 110%;
+        left: 15%;
         transform: translate(-50%, -50%);
     }
 
+    .lizard-title {
+        position: absolute;
+        top: 114%;
+        left: 11%;
+    }
+
+    /** spock **/
     #spockbutton {
-        top: 75%;
-        left: 0;
+        position: absolute;
+        top: 45%;
+        left: -15%;
         transform: translate(-50%, -50%);
+    }
+
+    .spock-title {
+        position: absolute;
+        top:48%;
+        left: -18%;
     }
 
     .center-content {
         position: absolute;
-        top: 50%;
+        margin-top: 0;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: center;
     }
 
     #displayPlayerChoice,
@@ -217,19 +256,15 @@ body {
     #scorebox {
         display: flex;
         justify-content: space-around;
-        padding: 10px;  
+        padding: 10px;
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        margin-top: 20px;
     }
 
     .rules {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        margin-top: 20px;
     }
 }
 
