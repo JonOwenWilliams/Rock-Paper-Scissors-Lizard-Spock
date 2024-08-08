@@ -167,6 +167,24 @@ body {
     width: 25px;
 }
 
+/** scores **/
+
+.scores {
+    font-weight: bold;
+}
+
+#wintext {
+    color: #63a000;
+}
+
+#losetext {
+    color: #f40234;
+}
+
+#drawtext {
+    color: #f0882f;
+}
+
 /** media query **/
 
 /** screen style for screens larger than a tablet **/
@@ -279,6 +297,7 @@ body {
     #displayRandomChoice,
     #result {
         margin-top: 10px, 0;
+        font-weight: bold;
     }
 
     #scorebox {
