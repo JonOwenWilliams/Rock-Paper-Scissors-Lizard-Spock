@@ -20,6 +20,7 @@ body {
 #gamename {
     text-shadow: 0 0 6px #000000;
     color: #ffffff;
+    padding: 0 5% ;
 }
 
 /** Icon **/
