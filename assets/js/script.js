@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         '#ffe600',
         '#63a000',
         '#2794ec'
-    ]
+    ];
 
     let currentIndex = 0;
 
@@ -35,18 +35,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // score area
 
-    let randomizerScore = 0
-    let playersScore = 0
-    let draw = 0
+    let randomizerScore = 0;
+    let playersScore = 0;
+    let draw = 0;
 
     //  playable Choices
 
     const resultElement = document.getElementById('result');
     const playersChoice = document.getElementById('displayPlayerChoice');
     const randomChoice = document.getElementById('displayRandomChoice');
-    const wins = document.getElementById('wins')
-    const losses = document.getElementById('losses')
-    const draws = document.getElementById('draws')
+    const wins = document.getElementById('wins');
+    const losses = document.getElementById('losses');
+    const draws = document.getElementById('draws');
 
     const gameChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const gameIcons = {
@@ -121,10 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
     //show rules
 
     document.getElementById('showrules').addEventListener('click',function() {
-        document.getElementById('rulesoverlay').classList.add('show')
+        document.getElementById('rulesoverlay').classList.add('show');
     });
 
     document.getElementById('hiderules').addEventListener('click', function() {
-        document.getElementById('rulesoverlay').classList.remove('show')
+        document.getElementById('rulesoverlay').classList.remove('show');
     });
 });
