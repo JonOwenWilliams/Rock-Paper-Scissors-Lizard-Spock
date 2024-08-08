@@ -42,6 +42,7 @@ body {
     height: 100vh;
     width: 85%;
     max-height: 750px;
+    min-height: 653px;
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
