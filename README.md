@@ -23,24 +23,24 @@ When testing this game I performed all testing steps for all screen sizes.
 
 Bug Fixes:
 
- 1. issue #1: There was an issue at the start of my Java Script code where all of a sudden after fixing a few spelling errors in my HTML the Java Script stopped working.
- - I fixed the issue by looking over my work and figured out that I misspelled the file name for script.js (I entered sript.js)
+     1. issue #1: There was an issue at the start of my Java Script code where all of a sudden after fixing a few spelling errors in my HTML the Java Script stopped working.
+         - I fixed the issue by looking over my work and figured out that I misspelled the file name for script.js (I entered sript.js)
 
- 2. issue #2: After creating the getResults function and testing the game afterward I realized that the results wouldn't update when you get a draw till you either get a win or loss then the score would update.
- - To fix the issue I read through all my code and realized I made a spelling error. I then fixed my error and the code worked smoothly.
+     2. issue #2: After creating the getResults function and testing the game afterward I realized that the results wouldn't update when you get a draw till you either get a win or loss then the score would update.
+         - To fix the issue I read through all my code and realized I made a spelling error. I then fixed my error and the code worked smoothly.
 
 
 # Deployment
 
 I deployed the site using Github pages:
 
-  1. Within the GitHub repository, select the settings tab,
-  2. Under the "code and automation" tab, select "pages".
-  3. Make sure you,
-     - Set the source to "Deploy from branch",
-     - Select "main branch"
-     - Set folder to "Root"
-     - Click "Save"
+     1. Within the GitHub repository, select the settings tab,
+     2. Under the "code and automation" tab, select "pages".
+     3. Make sure you,
+         - Set the source to "Deploy from branch",
+         - Select "main branch"
+         - Set folder to "Root"
+         - Click "Save"
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 In the GitHub repository, navigate to the Settings tab
