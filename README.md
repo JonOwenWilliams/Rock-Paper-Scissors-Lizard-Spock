@@ -7,6 +7,20 @@ This project involves implementing event handling and dynamically updating the D
 
 ## Features of the site.
 
+### Feature #1.
+         1. the way the game is laid out is different between the 3 main screen types (Mobile, Tablet, and desktop)
+
+             - The desktop lay out positions the buttons arround the reults and score box so everything is focused arround the center of the play area.
+
+![Screenshot of how the game is laid out for desktop screens](assets/images/webpage.png)
+
+             - The tablet lay out is positioned in a way where all buttons form a line on the top so all options are there for you to select and result are displayed just below.
+
+![Screenshot of how the game is laid out for tablet sized screens](assets/images/tablet-layout.png)
+
+             - The mobile lay out is posistioned in a way where all buttons are grouped so you can easily select the options and the results are displayed below
+
+![Screenshot of how the game is laid out for mobile sized screens](assets/images/mobile-layout.png)
 ## Testing
 
 When testing this game I performed all testing steps for all screen sizes.
