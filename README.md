@@ -97,6 +97,10 @@ When testing this game I performed all testing steps for all screen sizes.
 
  - I refreshed the page multiple times to ensure the changing icon worked as intended.
 
+## Goals
+
+The goals for this site were to test my knowledge and ability to use Java Script effectively and use the functions I have learned to produce a game that includes most things I have learned, such as **Loops, Conditionals, Randomization, DOM Manipulation, Event Handling, Responsive UI interaction, Timing Events, Array management, and accessing and modifying the DOM**.
+
 # Fixes
 
 Bug Fixes:
