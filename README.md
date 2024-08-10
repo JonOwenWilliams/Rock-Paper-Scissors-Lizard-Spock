@@ -48,6 +48,16 @@ This project involves implementing event handling and dynamically updating the D
 ### Feature #4
          4. I have included a rules section that has a button that will force a popup to appear with the rules displayed on it.
 
+ - The button itself has a hover feature.
+
+![Screenshot of the rules button not being hovered above](assets/images/rules.png)
+
+![Screenshot of the rules button being hovered over](assets/images/rules-hover.png)
+
+ - The rules them self have a small pop up window that doesnt take over the whole screen that has a close button on the top right for the ability to close down the pop up.
+
+![Screenshot of th rules window](assets/images/rulesbox.png)
+
 ## Testing
 
 When testing this game I performed all testing steps for all screen sizes.
