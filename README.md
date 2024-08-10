@@ -56,7 +56,34 @@ This project involves implementing event handling and dynamically updating the D
 
  - The rules them self have a small pop up window that doesnt take over the whole screen that has a close button on the top right for the ability to close down the pop up.
 
-![Screenshot of th rules window](assets/images/rulesbox.png)
+![Screenshot of the rules window](assets/images/rulesbox.png)
+
+### Feature #5
+         5. When hovering or selecting a choice that you want to play the icon itsself visibly changes so you know what you are about to select or have selected.
+
+ - This is how the icon looks before hovering or selecting.
+
+![Screenshot of the options before selecting/hovering](assets/images/dektop-before-selected.png)
+
+ - This is how the icon looks when hovering over and selecting on mobile.
+
+![Screenshot of the option when selecting on mobile](assets/images/mobile-selected.png)
+
+![Screenshot of the option when hovering over](assets/images/hover-over-choices.png)
+
+### Feature #6
+         6. After the player makes a choice. The response is instantly made and displayed in the results area aswell as displaying their choice it also displays the computer choice aswell as a message and the scores.
+
+![Screenshot of the results area](assets/images/choice-made.png)
+
+ - At the bottom of the results area displays the score system (Wins, Loses and draws)
+
+![Screenshot of score box](assets/images/winlosedraw.png)
+
+### Features #7
+         7. The favicon located at the top is a small image of rock paper scissors that i found on a site called [FlatIcon](https://www.flaticon.com/)
+
+![Screenshot of the Favicon](assets/images/favicon.png)
 
 ## Testing
 
