@@ -8,11 +8,11 @@ This project involves implementing event handling and dynamically updating the D
 ## Features of the site.
 
 ### Feature #1.
-         1. the way the game is laid out is different between the 3 main screen types (Mobile, Tablet, and desktop)
+         1. The way the game is laid out is different between the 3 main screen types (Mobile, Tablet, and desktop)
 
              - The desktop lay out positions the buttons arround the reults and score box so everything is focused arround the center of the play area.
 
-![Screenshot of how the game is laid out for desktop screens](assets/images/webpage.png)
+![Screenshot of how the game is laid out for desktop screens](assets/images/desktop-layout.png)
 
              - The tablet lay out is positioned in a way where all buttons form a line on the top so all options are there for you to select and result are displayed just below.
 
@@ -21,6 +21,33 @@ This project involves implementing event handling and dynamically updating the D
              - The mobile lay out is posistioned in a way where all buttons are grouped so you can easily select the options and the results are displayed below
 
 ![Screenshot of how the game is laid out for mobile sized screens](assets/images/mobile-layout.png)
+
+### Feature #2
+         2. The colours I decided to use for this game were inspired by the colours from the show the Big Bang Theory and I kept with the color scheme that I chose for the buttons for the background but darkened the colours so the background doesnt draw your attention away from the game.
+
+![Screenshot of the entire screen of the site to display the background](assets/images/webpage.png)
+
+### Feature #3
+         3. The icon below the title of the page is set to alternate between all choises to dispay the use of repeated execution in java script.
+
+#### Rock
+![Screenshot that displays of of the icons on the top of the page (Rock)](assets/images/rock-icon.png)
+
+#### Paper
+![Screenshot that displays of of the icons on the top of the page (Paper)](assets/images/paper-icon.png)
+
+#### Scissors
+![Screenshot that displays of of the icons on the top of the page (Scissors)](assets/images/scissors-icon.png)
+
+#### Lizard
+![Screenshot that displays of of the icons on the top of the page (Lizard)](assets/images/lizard-icon.png)
+
+#### Spock
+![Screenshot that displays of of the icons on the top of the page (Spock)](assets/images/spock-icon.png)
+
+### Feature #4
+         4. I have included a rules section that has a button that will force a popup to appear with the rules displayed on it.
+
 ## Testing
 
 When testing this game I performed all testing steps for all screen sizes.
